@@ -1,0 +1,98 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+  min-height: 100vh;
+  padding: 100px 300px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.color-palette {
+  width: 100%;
+  border: 1px solid #777;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+#seed-color {
+  height: 45px;
+  width: 75px;
+  margin-right: 1rem;
+}
+
+#scheme-options {
+  font-size: 1rem;
+  padding: 10px 40px;
+  margin-left: auto;
+}
+
+.btn-submit {
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 10px 30px;
+  /* margin-left: auto; */
+}
+
+.colors-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+p {
+  text-align: center;
+}
+
+.color-column {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 100%;
+  height: 100%;
+}
+
+.color {
+  /* setting this div's height to be 90% of it's parent container, div.color-column */
+  flex: 0 0 90%;
+}
+
+.seed-color {
+  /* flex 1 so it'll take up the remaining height of the .color-column container */
+  flex: 1;
+  /* centering the hex text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+button,
+select {
+  font-family: inherit;
+}
